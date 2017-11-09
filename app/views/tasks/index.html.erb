@@ -1,0 +1,23 @@
+<h1 class="page-header">To-Do List</h1>
+
+<div class="container">
+<div class="row">
+  <div class="col-md-12">
+	<%= link_to 'New Task', new_task_path, class: 'btn btn-success', remote: true %>
+	<div id="task-form" style="display:none;"></div><br>
+  <div class="col-md-12 col-md-offset-1">
+	<table class="table">
+	<thead>
+	<tr>
+	<th>Tasks</th>
+	<th>Date Created</th>
+	<th>Deadline</th></tr>
+	</thead>
+	<tbody id="tasks">
+		<%= render @tasks %>
+	</tbody>
+	</table>
+  </div>
+</div>
+</div>
+</div>
